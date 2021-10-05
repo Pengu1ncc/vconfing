@@ -1,0 +1,29 @@
+{
+  "inbounds": [
+    {
+      "port": [v2ray-port],
+      "listen": "127.0.0.1",
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": [uuid],
+            "alterId": 0
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": {
+          "path": "\v2"
+        }
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom",
+      "settings": {}
+    }
+  ]
+}
